@@ -11,61 +11,30 @@
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
     </head>
     <body>
-        <div class="container">
-            <div id="header"></div>
-            <div id="section">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-                illo, explicabo, aspernatur vero necessitatibus doloribus minus
-                quod quidem velit, dolores nostrum? Vel, assumenda error! Ex
-                perferendis deleniti illum cumque eos saepe pariatur earum
-                reprehenderit facere, consequuntur nemo ducimus corporis esse
-                labore iure similique quod praesentium provident corrupti qui,
-                sit voluptas. Aut veritatis illum esse asperiores accusantium.
-                Cumque omnis voluptatem laboriosam aspernatur porro ipsum ad?
-                Possimus, fuga! Nihil, hic. Omnis similique rem inventore
-                consequuntur optio pariatur, totam exercitationem at maxime et
-                nobis soluta veniam ipsum eos cumque, quae debitis? Libero,
-                mollitia doloremque eaque corrupti ex ea quasi cupiditate eius
-                nam dolores fugit quos cumque incidunt dolorum iste soluta
-                commodi. Dolor alias facilis est nisi adipisci quos dolore,
-                incidunt nesciunt eligendi minus magni vero itaque commodi
-                aperiam inventore animi? Eaque laudantium molestiae dolor, quo
-                rem nulla! Amet, nesciunt sunt commodi reiciendis iusto quisquam
-                provident blanditiis deserunt possimus voluptates. Delectus,
-                ipsam adipisci aspernatur eligendi inventore cupiditate ut ea
-                dolorem optio temporibus velit, tempora harum a quisquam,
-                doloribus accusantium iure unde mollitia. Tenetur iusto, quia
-                voluptatem ab maxime, suscipit ex impedit modi in temporibus
-                fuga architecto labore eaque blanditiis accusamus mollitia
-                incidunt deserunt ipsum voluptates est! Ex maiores consectetur
-                adipisci doloribus at nostrum ipsam consequuntur ipsum mollitia
-                enim, itaque eum perspiciatis hic numquam rem. Sapiente dolorem
-                rem commodi blanditiis distinctio dolorum illo sequi quibusdam
-                accusamus rerum? Laborum voluptatibus quo rerum molestiae
-                consequuntur, veritatis, doloribus recusandae iste asperiores
-                necessitatibus officiis illo ipsam modi magni amet nulla
-                distinctio est quisquam! Nam aliquid dolore laborum suscipit.
-                Atque quaerat veniam fugit placeat, voluptatibus expedita
-                ducimus. Est commodi deleniti architecto eos, facere repellat
-                voluptas tenetur autem hic eum. Veritatis, doloribus officiis?
-                Natus id a ipsa veritatis dolor nostrum laboriosam, perspiciatis
-                tenetur placeat est beatae officia nihil quaerat magnam eos
-                corrupti hic blanditiis numquam, eaque eligendi omnis. Sapiente
-                ut recusandae praesentium eveniet porro distinctio delectus,
-                corrupti ipsam, corporis atque id, adipisci iure possimus
-                asperiores voluptatum alias reiciendis. Libero quidem
-                dignissimos nisi a beatae, natus itaque earum unde possimus id
-                fugiat nulla alias dolorum voluptatum consectetur repellat
-                reiciendis maiores rerum sint qui laudantium tenetur quis eos.
-                Enim accusamus fugit ab ex dolore quas beatae, adipisci
-                molestias et vero quod cum sit, iste magni magnam. Quidem
-                quisquam eveniet labore magnam iure obcaecati, deleniti optio,
-                molestiae alias, harum voluptate. Tempora corporis perspiciatis
-                hic voluptas fugiat enim quae quibusdam recusandae culpa
-                delectus facere, omnis itaque in quam deserunt qui ratione error
-                veniam cumque voluptatibus.
+        <div class="container" id="supply">
+            <div id="header">
+                <div class="name"><h1>Smelov Nik</h1></div>
+                <div id="sidebar">
+                    <h3 id="about" v-on:click="printAbout">About Myself</h3>
+                    <h3>|</h3>
+                    <h3 id="skills" v-on:click="printSkills">Skills</h3>
+                    <h3>|</h3>
+                    <h3 id="works" v-on:click="printWorks">Works</h3>
+                </div>
             </div>
-            <div id="footer"></div>
+            <div id="section">
+                <div id="left">
+                    <p id="title">
+                        Welcome to the site of a young front-end delevoper
+                    </p>
+                    <p id="preview">
+                        This site was written in clean code, no consctuctors
+                    </p>
+                    <div id="music"><p>Play&Stop music</p></div>
+                </div>
+                <div id="right" v-cloak v-html="content"></div>
+            </div>
         </div>
-    </body>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./js/app.js" defer></script>
 </html>

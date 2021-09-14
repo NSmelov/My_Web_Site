@@ -13,7 +13,7 @@
     <body>
         <div class="container" id="supply">
             <div id="header">
-                <div class="name"><h1>Smelov Nik</h1></div>
+                <div class="name"><a href="/" style="color: white;"><h1>Smelov Nik</h1></a></div>
                 <div id="sidebar">
                     <h3 id="about" v-on:click="printAbout">About Myself</h3>
                     <h3>|</h3>
@@ -28,11 +28,13 @@
                         Welcome to the site of a young front-end delevoper
                     </p>
                     <p id="preview">
-                        This site was written in clean code, no consctuctors
+                        This site was written in clean code, no consctuctors.
                     </p>
+                    <p id="tech">Used technologies such as HTML5, CSS3, Native Javascript, NodeJS, ExpressJS, VueJS.</p>
                     <div id="music"><p>Play&Stop music</p></div>
                 </div>
-                <div id="right" v-cloak v-html="content"></div>
+                <div id="right" v-cloak v-bind:class="style" v-html="content">
+                </div>
             </div>
         </div>
         <script src="https://unpkg.com/vue@next"></script>

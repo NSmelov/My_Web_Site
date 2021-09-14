@@ -1,0 +1,38 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    size: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    position: fixed;
+    background-color: purple;
+    width: 100vw;
+    height: 8vh;
+    top: 0;
+}
+
+#section {
+    margin-top: 8vh;
+    font-size: 20px;
+    width: 100vw;
+    background-color: red;
+}
+#footer {
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+}

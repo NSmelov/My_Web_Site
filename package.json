@@ -1,0 +1,22 @@
+{
+  "name": "nodepractic",
+  "version": "1.0.0",
+  "description": "It's a small resume for a job search",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "supervisor index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "vuejs",
+    "resume",
+    "front-end"
+  ],
+  "author": "Smelov Nikolay <nikolajsmelov470@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

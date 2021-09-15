@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
     </head>
     <body>
+        <div id="supply">
         <div class="container" id="supply">
             <div id="header">
                 <div class="name"><a href="/" style="color: white;"><h1>Smelov Nik</h1></a></div>
@@ -37,6 +38,22 @@
                 </div>
             </div>
         </div>
+        <div id="slide">
+            <div id="slide-top"> <p class="tt" >&uarr;</p></div>
+            <div id="slide-bottom"><p class="tt">&darr;</p></div>
+        </div>
+        <div class="screen2">
+            <div class="contact">
+                <img style=" border-radius: 20px;width: 55vw; height: 80vh;" src="https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="logo">
+                
+            </div>
+            <div class="info">
+                <h1>Email:</h1>
+                <h2 style="margin-bottom: 1cm;">Smelov.nicolas@yandex.ru</h2>
+                <div><img v-on:click="copyUrl" class="image" src="data:image/png;base64,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" alt="Copy" style="margin: auto; border-radius: 50%;"></div>
+            </div>
+        </div>
+    </div>
         <script src="https://unpkg.com/vue@next"></script>
         <script src="./js/app.js" defer></script>
 </html>

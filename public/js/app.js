@@ -18,8 +18,30 @@ Vue.createApp({
             this.content = works
             this.style = 'active'
         },
+        copyUrl() {
+            let emailUrl = 'smelov.nicolas@yandex.ru'
+            navigator.clipboard.writeText(emailUrl)
+        },
     },
 }).mount('#supply')
+
+let container = document.querySelector('.container')
+let screen2 = document.querySelector('.screen2')
+let slideTop = document.querySelector('#slide-top')
+let slideBottom = document.querySelector('#slide-bottom')
+let screen = 1
+
+slideBottom.addEventListener('click', () => {
+    container.classList.add('up')
+    setTimeout(() => {
+        screen2.classList.add('up')
+    }, 2000)
+})
+
+slideTop.addEventListener('click', () => {
+    container.classList.remove('up')
+    screen2.classList.remove('up')
+})
 
 let about = `
     <div class="textname">

@@ -8,10 +8,10 @@ body {
     background-image: url(https://images.unsplash.com/photo-1524721696987-b9527df9e512?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80);
     position: relative;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     color: white;
 }
 

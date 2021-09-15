@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/gallery', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Gallery.html'))
+    res.sendFile(path.join(__dirname, 'public', 'gallery.html'))
 })
 
 app.get('/board', (req, res) => {
